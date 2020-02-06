@@ -4,7 +4,7 @@ from .models import Question
 
 
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ['title', 'categories', 'level']
+    list_display = ['title', 'author', 'categories', 'level']
 
 
 # Register your models here.
