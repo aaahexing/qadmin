@@ -53,9 +53,7 @@ export default function QuestionPannels() {
   const classes = useStyles();
 
   const state = useAsync(async () => {
-    const response = await fetch(
-      "http://10.0.0.10:8000/api/questions/?format=json"
-    );
+    const response = await fetch("/api/questions/?format=json");
     const result = await response.text();
     return result;
   }, []);
